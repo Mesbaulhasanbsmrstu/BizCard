@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context="com.Nextechbd.bizcards.FirstActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/poster"
+                android:scaleType="center"/>
+            <Button
+                android:id="@+id/show"
+                android:layout_width="match_parent"
+                android:layout_height="106dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/loginbuttonround"
+                android:textColor="#FFFFFF"
+                android:text="Card Gallery"
+                android:textAllCaps="false"
+                android:textSize="30sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/image1"/>
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/image2"/>
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/image3"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/scan"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:background="@drawable/loginbuttonround"
+                android:textColor="#FFFFFF"
+                android:text="Scan Card" />
+
+            <Button
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp"
+                android:id="@+id/creat"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:textAllCaps="false"
+                android:background="@drawable/loginbuttonround"
+                android:textColor="#FFFFFF"
+                android:text="Create Card"/>
+            <Button
+                android:id="@+id/profile"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/loginbuttonround"
+                android:textColor="#FFFFFF"
+                android:text="Profile"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
