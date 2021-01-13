@@ -2,7 +2,7 @@ package com.Nextechbd.bizcards;
 
 
 public class AppConfig {
-    public static String BASE_URL="http://mitechbd.com/card/";
+    public static String BASE_URL="";
 
     public static RegistrationApi getAPIService() {
 
